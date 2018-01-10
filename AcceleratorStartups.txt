@@ -1,17 +1,17 @@
-ALICE
-ALPHAPOINT
-ANVYL
-BATTERSEA
-CENTIVO
-EDENHEALTH
-ELECTRONIC GAMING FEDERATION
-EPIBONE
-KIDPASS
-LOLI
-NARMI
-NAUTILUS
-NEWTONX
-PULSEDATA
-RADISH
-SCALA COMPUTING
-URU
+Alice
+Alphapoint
+Anvyl
+Battersea
+Centivo
+Edenhealth
+Electronic Gaming Federation
+Epibone
+Kidpass
+Loli
+Narmi
+Nautilus
+Newtonx
+Pulseddata
+Radish
+Scala Computing
+Uru

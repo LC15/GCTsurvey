@@ -53,20 +53,7 @@ public class createEmailList{
 			
 			while(scannerTwo.hasNext()){
 				responded.add(scannerTwo.next());
-		}
-				
-			/*	checking=false;
-				for(String accelerator:accelerators){*/
-
-			/*		if(accelerator.equals(scannerTwo.next())){
-						System.out.println( "completed survey");
-						checking=true;
-					}
-				}
-				if(!checking){
-					System.out.println( " has NOT completed survey");
-				}
-			}*/
+		}		
 		}catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -103,12 +90,13 @@ public class createEmailList{
 				if(accelerator.equals(company)){
 					check=true;
 					
-					//System.out.println(accelerator);
+					
 					break;
 				}
 				
 			}
 			if(!check){
+				System.out.println(accelerator);
 				System.out.println(emailsList.get(pos));
 			}
 			pos++;

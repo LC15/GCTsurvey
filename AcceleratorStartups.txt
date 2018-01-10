@@ -1,17 +1,17 @@
 Alice
-Alphapoint
+AlphaPoint
 Anvyl
 Battersea
 Centivo
 Edenhealth
 Electronic Gaming Federation
 Epibone
-Kidpass
-Loli
+KidPass
+LOLI
 Narmi
-Nautilus
-Newtonx
-Pulseddata
+Nautilus Labs
+NewtonX
+pulseData
 Radish
 Scala Computing
 Uru

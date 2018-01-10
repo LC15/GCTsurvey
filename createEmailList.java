@@ -96,7 +96,7 @@ public class createEmailList{
 				
 			}
 			if(!check){
-				System.out.println(accelerator);
+				//System.out.println(accelerator);
 				System.out.println(emailsList.get(pos));
 			}
 			pos++;

@@ -149,4 +149,4 @@ Arogers@scalacomputing.com,
 srahman@scalacomputing.com,
 brunno@uruvideo.com,
 nico@uruvideo.com,
-xxue@uruvideo.com
+xxue@uruvideo.com,

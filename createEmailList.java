@@ -19,7 +19,9 @@ public class createEmailList{
        createCompanyList();
        createRespondedList();
        creatAcceleratorEmails();
-       createEmailList();
+       createEmailToSend();
+       createFounderEmailList();
+       createFounderEmailToSend();
      
     }
 	public static void createCompanyList(){
@@ -77,8 +79,26 @@ public class createEmailList{
 			e.printStackTrace();
 		}
 	}
+
+	public static void createFounderEmailList(){
+		File ceoEmailsFile= new File("CEOEmails.txt");
+		Scanner scannerFour = null;
+		
+		try {
+			scannerFour = new Scanner(ceoEmailsFile);	
+			scannerFour.useDelimiter("\n *");
+			
+			while(scannerFour.hasNext()){
+				ceoEmailList.add(scannerFour.next());
+		}
+		}catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	
-	public static void createEmailList(){
+	public static void createEmailToSend(){
+		System.out.println("THE FOLLOWING ARE MEMBERS OF THE GCT ACCELERATOR PROGRAM THAT HAVE NOT FILLED OUT THE SURVEY");
 		boolean check;
 		int pos=0;
 		for(String accelerator: emailsList){
@@ -87,20 +107,36 @@ public class createEmailList{
 				if(acceleratorThatResponded.equals(accelerator)){
 					check=true;
 					break;
-				}		
+				}
 			}
 			if(!check){
-				//System.out.println(emailsList.get(pos));
+				System.out.println(emailsList.get(pos));
 			}
 			pos++;
-		}
-
-			compareString(EmailsOfResponders.get(27), emailsList.get(1));
-			System.out.println(EmailsOfResponders.get(27));
-			System.out.println(emailsList.get(1));
-	
-	
+		}	
 	}
+	
+	public static void createFounderEmailToSend(){
+		System.out.println("THE FOLLOWING ARE FOUNDERS AND COMPANY CHIEF OFFICERS THAT HAVE NOT FILLED OUT THE SURVEY");
+		boolean check;
+		int pos=0;
+		for(String ceo: ceoEmailList){
+			check=false;
+			for(String responder: EmailsOfResponders){
+				if(responder.equals(ceo)){
+					check=true;
+					break;
+				}
+			}
+			if(!check){
+				System.out.println(ceoEmailList.get(pos));
+			}
+			pos++;
+		}	
+//remember: edenhealth domain name that was inputted != gct database info
+	}
+
+
 
 public static void compareString(String str1, String str2) {
     if (str1.equals(str2)) {

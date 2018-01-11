@@ -95,11 +95,32 @@ public class createEmailList{
 			pos++;
 		}
 
-	//	if(EmailsOfResponders.get(27).equals(emailsList.get(1))){
+			compareString(EmailsOfResponders.get(27), emailsList.get(1));
 			System.out.println(EmailsOfResponders.get(27));
 			System.out.println(emailsList.get(1));
-	//	}
+	
 	
 	}
 
+public static void compareString(String str1, String str2) {
+    if (str1.equals(str2)) {
+        System.out.println("they are equal");
+    }
+    if (str1 == null || str2 == null) {
+        System.out.println("one or both strings are empty");
+    }
+    int i;
+    for (i = 0; i < str1.length() && i < str2.length(); ++i) {
+        if (str1.charAt(i) != str2.charAt(i)) {
+            break;
+        }
+        System.out.println(i);
+    }
+    if (i < str2.length()-1 || i < str1.length()-1) {
+        System.out.println("one of the strings is shorter than the other");
+        System.out.println(str2.length()-1);
+        System.out.println(str1.length()-1);
+    }
+    
+}
 }

@@ -25,11 +25,11 @@ kate@thinkecoinc.com,
 avi@thisisalice.com,
 gfick@smartergridsolutions.com,
 bell@thisisalice.com,
-dave@thisisalice.com,
+dave@thisisalice.com
 brad@thisisalice.com,
 luke@thisisalice.com,
 sonya@thisisalice.com,
-paul@thisisalice.com,
+paul@thisisalice.com
 corey@buster.com,
 samantha@buster.com,
 paulina@nautiluslabs.co,

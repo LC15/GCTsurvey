@@ -9,9 +9,9 @@ import java.nio.charset.StandardCharsets;
 public class createEmailList{
 	//initialize class variables
 	static ArrayList <String> accelerators = new ArrayList <String> ();
-	static ArrayList <String> responded = new ArrayList <String> ();
+	static ArrayList <String> EmailsOfResponders = new ArrayList <String> ();
 	static ArrayList <String> emailsList= new ArrayList <String> ();
-	static String emails="";
+	static ArrayList <String> ceoEmailList= new ArrayList <String> ();
 
 	public static void main(String[] args) {
        System.out.println("Create Email is compiling");
@@ -23,9 +23,9 @@ public class createEmailList{
      
     }
 	public static void createCompanyList(){
-		
+		//set up accelerators ArrayList with the company names of the current GCT accelerator class
+
 		File acceleratorsFile= new File("AcceleratorStartups.txt");
-		
 		Scanner scanner = null;
 		
 		try {
@@ -42,9 +42,9 @@ public class createEmailList{
 	}    
 
 	public static void createRespondedList(){
-		
-		File respondedFile= new File("CompaniesWhoResponded.txt");
-		
+		//set up EmailsOfResponders ArrayList with the emails of the people who responded
+
+		File respondedFile= new File("EmailsofCompleted.txt");
 		Scanner scannerTwo = null;
 		boolean checking;
 		try {
@@ -52,7 +52,7 @@ public class createEmailList{
 			scannerTwo.useDelimiter("\n *");
 			
 			while(scannerTwo.hasNext()){
-				responded.add(scannerTwo.next());
+				EmailsOfResponders.add(scannerTwo.next());
 		}		
 		}catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -61,8 +61,8 @@ public class createEmailList{
 	}
 
 	public static void creatAcceleratorEmails(){
+		//set up emailsList ArrayList with all of the emails of people in the GCT accelerator program
 		File emailsFile= new File("emails.txt");
-		
 		Scanner scannerThree = null;
 		
 		try {
@@ -76,36 +76,30 @@ public class createEmailList{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
 	
 	public static void createEmailList(){
 		boolean check;
 		int pos=0;
-		int didntDoIt=0;
-		for(String accelerator: accelerators){
-			
+		for(String accelerator: emailsList){
 			check=false;
-			for(String company: responded){
-				if(accelerator.equals(company)){
+			for(String acceleratorThatResponded: EmailsOfResponders){
+				if(acceleratorThatResponded.equals(accelerator)){
 					check=true;
-					
-					
 					break;
-				}
-				
+				}		
 			}
 			if(!check){
-				//System.out.println(accelerator);
-				System.out.println(emailsList.get(pos));
+				//System.out.println(emailsList.get(pos));
 			}
 			pos++;
 		}
+
+	//	if(EmailsOfResponders.get(27).equals(emailsList.get(1))){
+			System.out.println(EmailsOfResponders.get(27));
+			System.out.println(emailsList.get(1));
+	//	}
 	
 	}
-
-
-
-
 
 }

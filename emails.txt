@@ -1,6 +1,6 @@
-paul@thisisalice.com, 
-dave@thisisalice.com,
-rd@thisisalice.com, 
+paul@thisisalice.com
+dave@thisisalice.com			
+rd@thisisalice.com, 			
 luke@thisisalice.com, 
 brad@thisisalice.com, 
 kennard@thisisalice.com, 
@@ -9,7 +9,7 @@ alex@thisisalice.com,
 David@thisisalice.com, 
 Ryan@thisisalice.com, 
 Sonya@thisisalice.com, 
-bell@thisisalice.com,
+bell@thisisalice.com,		
 igor@alphapoint.com, 
 michael@alphapoint.com, 
 ted@alphapoint.com, 
